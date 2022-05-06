@@ -9,7 +9,9 @@ import {AngularFirestore, AngularFirestoreDocument, AngularFirestoreCollection
 export class BasedatosService {
   constructor ( public AngularFirestore: AngularFirestore) {} 
 
-  createDocument ( ){
-    
+  createDocument <tipo>(data: tipo, enlace: string ){
+    const empleoCollection: AngularFirestoreCollection<tipo> =
+                          this.AngularFirestore.collection<tipo>(enlace);
+    return empleoCollection.add(data);
   }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { N_empleo } from '../../models/interfaces';
+import { BasedatosService } from '../../services/basedatos.service';
 
 @Component({
   selector: 'app-page2',
@@ -8,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 
 export class Page2Component implements OnInit {
 
-  constructor() { }
+  page2: N_empleo = {
+    nombreEmpleo: '',
+    nombreUsuario: '',
+    email: '',
+    descripcion: ''
+  };
+
+  constructor(public database: BasedatosService) { }
 
   ngOnInit() {
   }
 
+  save() {
+    console.log(this.page2);
+    const data = this.page2;
+    const enlace = 'NuevoEmpleo';
+    this.database.createDocument<N_empleo>(data, enlace)
+  }
 }
