@@ -8,6 +8,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import { AppMaterialModule } from './shared/app-material.module';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AppRoutingModule } from './app-routing.module';
 
 import { Page1Component } from './Pages/page1/page1.component';
@@ -18,7 +20,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppMaterialModule, FlexLayoutModule, AppRoutingModule, AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule],
+  imports:      [ BrowserModule, FormsModule, AppMaterialModule, FlexLayoutModule, AppRoutingModule, AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule, AngularFireStorageModule, AngularFireAuthModule],
   declarations: [ AppComponent, HelloComponent, NavbarComponent, Page1Component, Page2Component ],
   bootstrap:    [ AppComponent ]
 })
