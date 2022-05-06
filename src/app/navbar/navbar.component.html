@@ -10,20 +10,14 @@
   </button>
 
   <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="15px" class="pl-3">
-    <span fxHide fxShow.xs>StarSale || This is just the front-end, the page does not insert, recognize or store data. </span>
-    <span fxHide fxShow.sm>StarSale || This is just the front-end, the page does not insert, recognize or store data.</span>
-    <span fxHide fxShow.md>StarSale || This is just the front-end, the page does not insert, recognize or store data.</span>
-    <span fxHide fxShow.lg>StarSale || This is just the front-end, the page does not insert, recognize or store data.</span>
-    <span fxHide fxShow.xl>StarSale || This is just the front-end, the page does not insert, recognize or store data.</span>
+    <span fxHide fxShow.xs>BretEx</span>
   </div>
 
   <span fxFlex></span>
 
   <div fxLayout="row" fxShow="false" fxShow.gt-sm>
-    <button mat-button routerLink="/page1" routerLinkActive="router-link-active no-border">Articles</button>
-    <button mat-button routerLink="/page2" routerLinkActive="router-link-active no-border">Login</button>
-    <button mat-button routerLink="/page3" routerLinkActive="router-link-active no-border">Enter new article</button>
-    <button mat-button routerLink="/page4" routerLinkActive="router-link-active no-border">About StarSale</button>
+    <button mat-button routerLink="/page1" routerLinkActive="router-link-active no-border">Empleos</button>
+    <button mat-button routerLink="/page2" routerLinkActive="router-link-active no-border">Ingresar nuevos empleos</button>
   </div>
 </mat-toolbar>
 
@@ -31,18 +25,11 @@
   <mat-drawer #drawer>
     <div fxLayout="column">
       <button mat-button routerLink="/page1" routerLinkActive="selected no-border txt-bold" fxLayoutAlign="start" class="py-2 pr-5">
-        <mat-icon class="mr-2">filter_1</mat-icon>Articles</button>
+        <mat-icon class="mr-2">filter_1</mat-icon>Empleos</button>
       <mat-divider></mat-divider>
       <button mat-button routerLink="/page2" routerLinkActive="selected no-border txt-bold" fxLayoutAlign="start" class="py-2 pr-5">
-        <mat-icon class="mr-2">filter_2</mat-icon>Login</button>
+        <mat-icon class="mr-2">filter_2</mat-icon>Ingresar nuevos empleos</button>
       <mat-divider></mat-divider>
-      <button mat-button routerLink="/page3" routerLinkActive="selected no-border txt-bold" fxLayoutAlign="start" class="py-2 pr-5">
-        <mat-icon class="mr-2">filter_3</mat-icon>Enter new article</button>
-      <mat-divider></mat-divider>
-      <button mat-button routerLink="/page4" routerLinkActive="selected no-border txt-bold" fxLayoutAlign="start" class="py-2 pr-5">
-        <mat-icon class="mr-2">filter_4</mat-icon>About StarSale</button>
-      <mat-divider></mat-divider>
-
     </div>
   </mat-drawer>
 
