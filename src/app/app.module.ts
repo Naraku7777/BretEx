@@ -20,7 +20,7 @@ import { Page2Component } from './Pages/page2/page2.component';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
 @NgModule({
-  imports:      [ AngularFireDatabaseModule, AppMaterialModule, FlexLayoutModule, BrowserModule, AppRoutingModule, FormsModule, AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule],
+  imports:      [ AngularFireDatabaseModule, AppMaterialModule, FlexLayoutModule, BrowserModule, AppRoutingModule, FormsModule, AngularFirestoreModule],
   declarations: [ AppComponent, HelloComponent, NavbarComponent, Page1Component, Page2Component],
   bootstrap:    [ AppComponent ]
 })
