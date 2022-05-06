@@ -17,8 +17,6 @@ import { environment } from './environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
-
-
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppMaterialModule, FlexLayoutModule, AppRoutingModule, AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule],
   declarations: [ AppComponent, HelloComponent, NavbarComponent, Page1Component, Page2Component ],
