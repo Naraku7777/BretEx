@@ -19,7 +19,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppMaterialModule, FlexLayoutModule, AppRoutingModule, AngularFireModule.initializeApp(environment.firebaseConfig), AngularFireDatabaseModule],
+  imports:      [ BrowserModule, FormsModule, AppMaterialModule, FlexLayoutModule, AppRoutingModule],
   declarations: [ AppComponent, HelloComponent, NavbarComponent, Page1Component, Page2Component ],
   bootstrap:    [ AppComponent ]
 })
