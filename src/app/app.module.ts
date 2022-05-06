@@ -15,10 +15,11 @@ import { Page2Component } from './Pages/page2/page2.component';
 
 import { environment } from './environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppMaterialModule, FlexLayoutModule, AppRoutingModule, AngularFireModule.initializeApp(environment.firebaseConfig), AngularFirestoreModule],
+  imports:      [ BrowserModule, FormsModule, AppMaterialModule, FlexLayoutModule, AppRoutingModule, AngularFireModule.initializeApp(environment.firebaseConfig), AngularFireDatabaseModule],
   declarations: [ AppComponent, HelloComponent, NavbarComponent, Page1Component, Page2Component ],
   bootstrap:    [ AppComponent ]
 })
