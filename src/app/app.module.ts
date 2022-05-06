@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { NavbarComponent } from './navbar/navbar.component';
+
 import { AppMaterialModule } from './shared/app-material.module';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { AppRoutingModule } from './app-routing.module';
@@ -14,8 +15,8 @@ import { Page2Component } from './Pages/page2/page2.component';
 
 
 @NgModule({
-  imports:      [ AppMaterialModule, FlexLayoutModule, BrowserModule, AppRoutingModule, FormsModule],
-  declarations: [ AppComponent, HelloComponent, NavbarComponent, Page1Component, Page2Component],
+  imports:      [ BrowserModule, FormsModule, AppMaterialModule, FlexLayoutModule, AppRoutingModule ],
+  declarations: [ AppComponent, HelloComponent, NavbarComponent, Page1Component, Page2Component ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
