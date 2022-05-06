@@ -24,8 +24,8 @@ export class Page2Component implements OnInit {
 
   save() {
     //console.log(this.page2);
-    //const data = this.page2;
-    //const enlace = 'NuevoEmpleo';
-    //this.database.createDocument<N_empleo>(data, enlace)
+    const data = this.page2;
+    const enlace = 'NuevoEmpleo';
+    this.database.createDocument<N_empleo>(data, enlace)
   }
 }
