@@ -14,8 +14,8 @@ import { Page1Component } from './Pages/page1/page1.component';
 import { Page2Component } from './Pages/page2/page2.component';
 
 import { environment } from './environments/environment';
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 
 @NgModule({
